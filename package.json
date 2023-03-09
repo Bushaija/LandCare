@@ -42,5 +42,10 @@
     "not ie 11"
   ],
   "author": "Mapbox",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+  
 }

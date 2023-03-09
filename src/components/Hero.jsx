@@ -19,7 +19,7 @@ function Hero() {
   }, []);
 
   return (
-    <section className="mt-4 mx-auto z-0 header_content relative mb-20 sm:mb-0 bg-dark p-[2px] shadow-2xl flex justify-center items-center">
+    <section className="mt-4 mx-auto z-0 header_content relative mb-[110px] sm:mb-0 bg-dark p-[2px] shadow-2xl flex justify-center items-center">
       <div className="w-full duration-500 rounded-lg shadow-lg -z-10">
         <img
           src={`${images[slideIndex]}`}
@@ -31,8 +31,8 @@ function Hero() {
 
       {/* content */}
       <div
-        className="block rounded-sm shadow-lg
-        absolute top-[20px] sm:top-[20px] left-[50px] sm:left-[20px] md:max-w-[500px]
+        className="block rounded-sm shadow-2xl
+        absolute top-[20px] sm:top-[20px] left-[30px] sm:left-[20px] md:max-w-[500px]
         backdrop-brightness-50
         p-4
         "
@@ -48,7 +48,7 @@ function Hero() {
 
 
       {/* search box */}
-      <div className="absolute top-[60%] left-[70px] sm:top-[60%] sm:left-[20px] bg-[#292929] shadow-2xl">
+      <div className="absolute top-[60%] left-[54px] sm:top-[60%] sm:left-[20px] bg-[#292929] shadow-2xl">
         <Search />
       </div>
     </section>

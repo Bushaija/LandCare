@@ -25,7 +25,7 @@ const ServicesComponent = () => {
               <div key={index} className='flex flex-col justify-center items-center shadow-2xl py-8 bg-[#272727]'>
                 {/* image */}
                 <div className='mb-4'>
-                  <img src={service.img} className="w-[200px]" alt="" />
+                  <img src={service.img} className=" w-[150px] xs:w-[180px]" alt="" />
                 </div>
                 {/* content */}
                 <div>

@@ -2,7 +2,7 @@ import styles from "../style";
 import { socialMedia } from "../constants";
 
 const Footer = () => (
-  <section className={`${styles.flexCenter} ${styles.paddingY} mt-16 flex-col`}>
+  <section className={`${styles.flexCenter} ${styles.paddingY} xs:mt-[12px] flex-col`}>
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className="flex-[1] flex flex-col justify-start mr-10">
       <h1 className='text-gray-200 text-[1.7rem] font-bold border-l-[3px] border-orange-500 rounded-full p-[5px]'>Land<span className='text-ora'>Care</span></h1>

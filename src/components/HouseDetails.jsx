@@ -95,7 +95,7 @@ const HouseDetails = () => {
           <article className='max-w-[400px] xs:min-w-[420px] shadow-xl sm:shadow-sm'>
             <h2 className='text-[1.5rem] font-semibold text-gradient mb-4 text-center'>Overview</h2>
             
-            <div className='flex flex-col gap-2 p-2'>
+            <div className='flex flex-col gap-2 px-4 xs:p-2 mx-2'>
 
                 {/* price */}
                 <div className='flex justify-between items-center'>
