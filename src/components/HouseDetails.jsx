@@ -60,19 +60,6 @@ const HouseDetails = () => {
             <div className='max-w-[500px] relative group md:pt-8'>
 
               {/* loader spinner */}
-              {
-                loading && (
-                <div>
-                  <Audio
-                    height="50"
-                    width="50"
-                    color='orange'
-                    ariaLabel='loading'
-                  />
-                </div>
-                )
-              }
-
               {/* image */}
               <div>
                 <img src={`${house.images[currentIndex]}`} className="w-full h-full rounded-xl bg-center bg-cover duration-500" alt="property image" />
