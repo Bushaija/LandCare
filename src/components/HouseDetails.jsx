@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from 'react-icons/rx';
+import { Audio } from 'react-loader-spinner'
 
 
 // import { IoIosBed } from "react-icons/io";
@@ -19,6 +20,12 @@ const HouseDetails = () => {
 
     if (!house) {
         return <NotFound />;
+    }
+
+    const [ loading, setLoading ] = useState(true);
+
+    function handleImageLoad () {
+      setLoading(false);
     }
 
     //image sliding.....
@@ -51,18 +58,35 @@ const HouseDetails = () => {
           {/* property card */}
           <article className='shadow-xl sm:shadow-sm p-2'>
             <div className='max-w-[500px] relative group md:pt-8'>
+
+              {/* loader spinner */}
+              {
+                loading && (
+                <div>
+                  <Audio
+                    height="50"
+                    width="50"
+                    color='orange'
+                    ariaLabel='loading'
+                  />
+                </div>
+                )
+              }
+
               {/* image */}
-              <img src={`${house.images[currentIndex]}`} className="w-full h-full rounded-xl bg-center bg-cover duration-500" alt="property image" />
-              
+              <div>
+                <img src={`${house.images[currentIndex]}`} className="w-full h-full rounded-xl bg-center bg-cover duration-500" alt="property image" />
+                
 
-              {/* left arrow */}
-              <div className='block absolute top-[50%] -left-2 -translate-x-0 translate-y-[-50%] text-2xl rounded-full p-2 bg-orange-700 cursor-pointer'>
-                  <BsChevronCompactLeft onClick={prevSlide} size={30} fill={"white"}/>
-              </div>
+                {/* left arrow */}
+                <div className='block absolute top-[50%] -left-2 -translate-x-0 translate-y-[-50%] text-2xl rounded-full p-2 bg-orange-700 cursor-pointer'>
+                    <BsChevronCompactLeft onClick={prevSlide} size={30} fill={"white"}/>
+                </div>
 
-              {/* right arrow */}
-              <div className='block absolute top-[50%] -translate-x-0 translate-y-[-50%] -right-2 text-2xl rounded-full p-2 bg-orange-700 cursor-pointer'>
-                  <BsChevronCompactRight onClick={nextSlide} size={30} fill={"white"}/>
+                {/* right arrow */}
+                <div className='block absolute top-[50%] -translate-x-0 translate-y-[-50%] -right-2 text-2xl rounded-full p-2 bg-orange-700 cursor-pointer'>
+                    <BsChevronCompactRight onClick={nextSlide} size={30} fill={"white"}/>
+                </div>
               </div>
 
               {/* pagination */}
