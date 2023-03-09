@@ -46,8 +46,9 @@ const HouseDetails = () => {
       <Navigation />
 
         <section className='flex flex-col justify-center items-center'>
-          <main className='flex flex-col md:justify-between md:flex-row md:shadow-2xl md:w-full xs:items-center gap-5'>
+          <main className='flex flex-col md:justify-between md:flex-row md:shadow-2xl md:w-full lg:max-w-[85em] xs:items-center gap-5'>
 
+          {/* property card */}
           <article className='shadow-xl sm:shadow-sm p-2'>
             <div className='max-w-[500px] relative group md:pt-8'>
               {/* image */}

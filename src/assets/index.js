@@ -53,7 +53,6 @@ import buildingS4 from "./buildingS4.jpg";
 import buildingS5 from "./buildingS5.jpg";
 import buildingS6 from "./buildingS6.jpg";
 
-import sampleImage1 from './sampleImage1.jpeg';
 import astronaut from './astronaut.svg';
 import planet from './planet.svg';
 import home from './home.png';
@@ -109,7 +108,6 @@ export {
 
   astronaut,
   planet,
-  sampleImage1,
 
   a1lg,
   a2lg,

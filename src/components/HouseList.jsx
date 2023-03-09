@@ -43,9 +43,12 @@ function HouseList({houses}) {
           </div>
 
            {/* Map */}
-           <div className='hidden lg:block lg:ml-8 lg:h-full'>
-           <AllPropertiesMap />
-          </div>
+           <article>
+           <h2 className='text-[1.5rem] font-semibold text-gradient mb-4 text-center'>Mapping</h2>
+              <div className='hidden lg:flex lg:ml-8 lg:h-full lg:justify-center lg:items-center'>
+              <AllPropertiesMap />
+              </div>
+          </article>
 
         </main>
       </section>

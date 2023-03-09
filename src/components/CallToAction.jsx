@@ -2,7 +2,7 @@ import React from 'react'
 
 function CallToAction() {
   return (
-    <section className='flex justify-center items-center mt-24'>
+    <section className='flex justify-center items-center mt-8'>
       <article className='flex flex-col xs:flex-row justify-between items-center w-[80%] p-8 bg-black-gradient-2 rounded-xl'>
         {/* Content */}
         <div>

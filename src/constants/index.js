@@ -7,7 +7,7 @@ import { service1, service3, service5, service6, service8, people01, people02, p
 
 import {buildingS1, buildingS2, buildingS3, buildingS4, buildingS5, buildingS6 } from '../assets/index';
 
-import { sampleImage1, a1lg, a2lg, a3lg, a4lg, a5lg, a6lg} from '../assets/index';
+import {a1lg, a2lg, a3lg, a4lg, a5lg, a6lg} from '../assets/index';
 
 //building1
 

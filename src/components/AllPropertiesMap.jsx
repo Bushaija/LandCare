@@ -27,8 +27,8 @@ const AllPropertiesMap = () => {
       {...viewport}
       mapboxAccessToken={REACT_APP_MAPBOX_TOKEN}
       style={{
-        width: "50vw",
-        height: "100vh",
+        width: "80vw",
+        height: "500px",
         padding:"4px",
         border:"2px solid orange",
         borderRadius: "10px",

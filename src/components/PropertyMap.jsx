@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Map, {Marker, Popup} from 'react-map-gl';
 import { houses } from '../constants';
@@ -20,6 +20,17 @@ const propertyMap = () => {
   });
 
   const [ selectedPark, setSelectedPark ] = useState(null);
+  useEffect(() => {
+    const listener = e => {
+      if(e.key === "Escape") {
+        setSelectedPark(null);
+      }
+    };
+    window.addEventListener("keydown", listener);
+    return () => {
+      window.removeEventListener("keydown", listener);
+    }
+  }, []);
   
   return (
     <div>
@@ -46,7 +57,7 @@ const propertyMap = () => {
         longitude={viewport.longitude}
       >
         <button
-        onClick={e => {
+        onClick={(e) => {
           e.preventDefault();
           setSelectedPark(house);
         }}
@@ -59,11 +70,17 @@ const propertyMap = () => {
           <Popup
             latitude={viewport.latitude}
             longitude={viewport.longitude}
+            onClose={() => {
+              selectedPark(null);
+            }}
           >
-            <div>
-              <h2>title</h2>
-              <p>description</p>
-              
+            <div className='flex flex-col gap-2'>
+              <p>{house.description}</p>
+              <p>
+                {house.address.cell},
+                {house.address.province},
+                {house.address.city}
+              </p>
             </div>
           </Popup>
         ): null

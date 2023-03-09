@@ -32,7 +32,6 @@ import SidePhone from './SidePhone'
 import Statistics from './Statistics';
 import Testimonials from './Testimonials';
 import VillaSlider from './VillaSlider';
-import ReactMapGl from './ReactMapGl';
 import AllPropertiesMap from './AllPropertiesMap';
 
 
@@ -71,7 +70,6 @@ export {
     SampleHouse,
     SingleHouse,
     VillaSlider,
-    ReactMapGl,
     AllPropertiesMap,
 
 }
